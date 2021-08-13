@@ -47,20 +47,27 @@ section{
 .reviews{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 600px;
+    gap: 15px;
+    width: 620px;
 }
 .review1, .review2, .review3{
     background-color: hsl(300, 24%, 96%);
     border-radius: 10px;
-    padding: 15px;
+    padding:20px 12px;
     gap: 15px;
     display: flex;
     width: 80%;
 }
+.stars{
+    padding-left: 8px;
+}
+.stars img{
+    padding-left: 3px;
+}
 .reviews p{
     color:  hsl(300, 43%, 22%);
-    font-weight: 500;
+    font-weight: 700;
+    padding-left: 5px;
 }
 .review1{
     align-self: flex-start;
@@ -93,10 +100,10 @@ section{
 .name{
     margin-left: 20px;
 }
-.name >p:nth-child(2){
+.name >p:nth-child(1){
    color: hsl(0, 0%, 100%);
    font-size: 13px;
-   font-weight: 700;
+   font-weight: 500;
 }
 .name >p:nth-child(2){
     font-size: 13px;
@@ -108,8 +115,8 @@ section{
 .card1, .card2, .card3{
     background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
-    padding: 20px 15px;
-    color: #fff;
+    padding: 25px 15px;
+    color: hsl(0, 0%, 100%);
     width: 350px;
 }
 .card1{
