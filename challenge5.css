@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat, url(./images/bg-pattern-bottom-desktop.svg) no-repeat;
+    background-position: top left , right bottom -5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    padding-bottom: 30px;
+    
+}
+.text{
+    flex-basis: 50%;
+}
+.text h1{
+    color: hsl(300, 43%, 22%);
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+}
+.text p{
+    padding-top: 10px;
+    line-height: 1.7;
+    color:  hsl(303, 10%, 53%);
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 600px;
+}
+.review1, .review2, .review3{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 15px;
+    display: flex;
+    width: 80%;
+}
+.reviews p{
+    color:  hsl(300, 43%, 22%);
+    font-weight: 500;
+}
+.review1{
+    align-self: flex-start;
+}
+.review2{
+    align-self: center;
+}
+.review3{
+    align-self: flex-end;
+}
+.cards{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 260px;
+
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.name{
+    margin-left: 20px;
+}
+.name >p:nth-child(2){
+   color: hsl(0, 0%, 100%);
+   font-size: 13px;
+   font-weight: 700;
+}
+.name >p:nth-child(2){
+    font-size: 13px;
+    color:  hsl(333, 80%, 67%);
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+.card1, .card2, .card3{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 20px 15px;
+    color: #fff;
+    width: 350px;
+}
+.card1{
+    align-self: flex-start;
+}
+.card2{
+    align-self: center;
+}
+.card3{
+    align-self: flex-end;
+}
+
+.profile, .cardtext{
+    padding: 10px;
+}
+.cardtext{
+    width: 320px;
+    Font-size: 13px;
+    line-height: 1.7;
+}
