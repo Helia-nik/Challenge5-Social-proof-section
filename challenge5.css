@@ -165,6 +165,7 @@ section{
     }
     .reviews{
         width: 100vw !important;
+        margin-top: 20px;
     }
     .review1, .review2, .review3{
         align-self: center;
@@ -196,6 +197,7 @@ section{
     .card1, .card2, .card3{
         width: 360px;
         align-self: center;
+        margin-bottom: 10px;
     }
 
 }
