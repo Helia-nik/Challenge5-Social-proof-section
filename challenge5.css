@@ -33,16 +33,17 @@ section{
 .text{
     flex-basis: 50%;
 }
-.text h1{
+.title{
     color: hsl(300, 43%, 22%);
     text-align: left;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
 }
-.text p{
+.text1{
     padding-top: 10px;
     line-height: 1.7;
     color:  hsl(303, 10%, 53%);
+    max-width: 450px;
 }
 .reviews{
     display: flex;
@@ -53,7 +54,7 @@ section{
 .review1, .review2, .review3{
     background-color: hsl(300, 24%, 96%);
     border-radius: 10px;
-    padding:20px 12px;
+    padding:20px 10px;
     gap: 15px;
     display: flex;
     width: 80%;
@@ -117,7 +118,7 @@ section{
     border-radius: 10px;
     padding: 25px 15px;
     color: hsl(0, 0%, 100%);
-    width: 350px;
+    width: 355px;
 }
 .card1{
     align-self: flex-start;
@@ -136,4 +137,51 @@ section{
     width: 320px;
     Font-size: 13px;
     line-height: 1.7;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    body{
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .cards{
+        flex-direction: column;
+        padding-bottom:150px;
+    }
+    
+    .review1, .review2, .review3{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+    }
+    .text{
+        align-self: center;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text1{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .text1 p{
+        max-width: 340px;
+    }
+    .card1, .card2, .card3{
+        width: 360px;
+    }
+
 }
